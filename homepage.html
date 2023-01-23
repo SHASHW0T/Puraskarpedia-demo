@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <header>
+    <nav>
+        <div class="logo">
+          <img src="images/logo.png" />
+        </div>
+        <div class="icon">
+          <span class="toggle">☰</span>
+        </div>
+        <ul class="list-item">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="#mySearch">Search</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </nav>
+      <script src="js/script.js"></script>
+    </header>
+
+
+  <span Style="font-size:250%;margin-top: 1.5rem;font-family:Comic Sans MS;background-image:linear-gradient(to bottom,#FFDB71,#E7F1FF,#CFFCC3)"><b><i><ins>PURASKAR PEDIA</ins></i></b></span>
+
+
+<body style="background-color:#D8FCC9;background-image:linear-gradient(to left top,#FFDB71,#FBFFB8,#CFFCC3)">
+<style>
+
+ul{
+	list-style: none;
+  text-decoration: none;
+}
+
+li a{
+  text-decoration: none;
+}
+/* {
+  font-family: Arial;
+}
+{
+  box-sizing: border-box;
+} */
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 15%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 10px;
+}
+
+/* Right column (page content) */
+.right {
+flex: 99%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 9px;
+  text-decoration: none;
+  color: black;
+  display: block
+
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+/* css for navbar */
+
+header {
+    background-color: #333;
+    /* height: 500px; */
+  }
+  
+  /*   Start navigation bar   */
+  
+  nav {
+    height: 80px;
+    background: rgba(240, 236, 242, 1.0);
+    background: -webkit-linear-gradient(top left, rgba(240, 236, 242, 1.0), rgba(227, 221, 116, 1.0));
+    background: -moz-linear-gradient(top left, rgba(240, 236, 242, 1.0), rgba(227, 221, 116, 1.0));
+    background: linear-gradient(to bottom right, rgba(240, 236, 242, 1.0), rgba(227, 221, 116, 1.0));
+    border-bottom: 1px solid rgb(231, 221, 221);
+    margin-bottom: 1.5rem;
+    border;
+  }
+  .logo {
+    padding: 10px;
+    width: auto;
+    float: left;
+  }
+  .logo img {
+    height: 55px;
+  }
+  .list-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px;
+  }
+  .list-item li {
+    float: left;
+    padding: 13px 13px;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: all .7s ease-in-out;
+  }
+  .list-item li a {
+    color: rgb(32, 27, 27);
+  }
+  .list-item li:hover {
+    background-color: rgb(235, 192, 192);
+  }
+  
+  /*   End navigation bar   */
+  
+  
+  
+  
+  
+  /*   Start nav bar for small screens   */
+  
+  .icon {
+    display: none;
+  }
+  .toggle {
+    float: right;
+    margin: 20px;
+    color: #EEE;
+    font-size: 30px;
+    border: 1px solid #EEE;
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /*   End nav bar for small screens   */
+  
+  /*   Start media query   */
+  
+  @media (max-width: 1309px) {
+    .icon {
+      display: block;
+      width: 100%;
+      height: 80px;
+      background: rgba(240, 236, 242, 1.0);
+      background: -webkit-linear-gradient(top left, rgba(240, 236, 242, 1.0), rgba(227, 221, 116, 1.0));
+      background: -moz-linear-gradient(top left, rgba(240, 236, 242, 1.0), rgba(227, 221, 116, 1.0));
+      background: linear-gradient(to bottom right, rgba(240, 236, 242, 1.0), rgba(227, 221, 116, 1.0));
+      border-bottom: 1px solid #444;
+    }
+    .list-item {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: -4px;
+      background-color: #222;
+      display: none;
+    }
+    .list-item li {
+      text-align: center;
+      display: block;
+      border-bottom: 1px solid #333;
+      float: none;
+    }
+  }
+  
+  
+  /*   End media query   */
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="left" style="background-color:#ddd;background-image: linear-gradient(to right bottom,#FCD359,#FAFBFC,#9FFC87,#FCD359,#FAFBFC,#9FFC87)">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="BharatRatna.html" target="_blank"><b><i>BHARAT RATNA</b></i></a></li>
+      <li><a href="Padmavibhushan.html"><b><i>PADMA VIBHUSHAN</i></b></a></li>
+      <li><a href="DRONACHARYAAWARD.html"><b><i>DRONACHARYA AWARD</b></i></a></li>
+      <li><a href="padmashri.html"><b><i>PADMA SHRI</b></i></a></li>
+      <li><a href="paramveer.html"><b><i>PARAM VIR CHAKRA</b></i></a></li>
+      <li><a href="AshokChakra.html"><b><i>ASHOKA CHAKRA</b></i></a></li>
+      <li><a href="arjuna.html"><b><i>ARJUNA AWARD</b></i></a></li>
+      <li><a href="#8"><b><i>DHAYAN CHANDRA AWARD</b></i></a>
+      <li><a href="#9"><b><i>RAJIV GANDHI KHEL RATNA</b></i></a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;background-image: linear-gradient(to bottom,#FCD359,#9FFC87,#FCD359)">   
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://media.istockphoto.com/vectors/fi/vaakasuuntainen-maalaismainen-vektori-puinen-tausta-kolmiv%C3%A4rimaalatuista-nauhoista-id1392299052?b=1&k=20&m=1392299052&s=170667a&w=0&h=AkkqrE2LH2Ij52NH6fZVtB7GPrQCb535qzotxuQBQJM=");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  /* padding: 20px; */
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ignore */
+/* Content */
+.content {
+  background-color:white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color:white ;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1></h1>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+    <a href="BharatRatna.html" target="_blank">
+      <img src="https://img.jagranjosh.com/imported/images/E/Articles/bharat_ratna.webp" img-align:"center" width="300" height="180" target="_blank"><h4>BHARAT RATNA</h4></img></a>
+      
+      
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a href="Padmavibhushan.html" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Medal%2C_order_%28AM_2014.7.12-1%29.jpg/330px-Medal%2C_order_%28AM_2014.7.12-1%29.jpg"  width="300" height="180">
+      <h4  >PADMA VIBHUSHAN</h4></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a href="DRONACHARYAAWARD.html" target="_blank">  
+    <img src="https://1.bp.blogspot.com/-NOYbD0bKKJE/V7sgkGqxVMI/AAAAAAAAfm8/3pBE_oWIFmAo4kUf5cVC5ocwyVeAzqt0ACLcB/s1600/Dronacharya%2BAward%2B2016%2BWinners.jpg"  width="300" height="180"">
+      <h4>DRONACHARYA AWARD</h4></a>
+      <p></p>
+    </div>
+  </div>
+  </div class="row">
+  
+  <div class="row">
+   <div class="column cars">
+    <div class="content">
+      <a href="padmashri.html" target="_blank">  
+      <img src="https://static.toiimg.com/thumb/msid-62660066,imgsize-256181,width-400,resizemode-4/62660066.jpg" width="300" height="180"">
+      <h4>PADMA SHRI</h4></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a href="paramveer.html" target="_blank">  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4Eux7h6gGIbfgUhR16P3aEl1XixQScqeCQ&usqp=CAU" width="300" height="180"">
+      <h4>PARAM VIR CHAKRA</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <a href="AshokChakra.html" target="_blank">
+    <img src="https://www.sentinelassam.com/wp-content/uploads/2019/04/Ashoka-Chakra-Award-1024x859.jpg" width="300" height="180"">
+      <h4>ASHOKA CHAKRA</h4></a>
+      <p></p>
+    </div>
+  </div>
+</div class="row">
+  
+<div class="row">
+  <div class="column people">
+    <div class="content">
+      <a href="arjuna.html" target="_blank">
+      <img src="https://i0.wp.com/nenow.in/wp-content/uploads/2018/09/Arjuna-Award.jpg?w=558&ssl=1" width="300" height="180"">
+      <h4>ARJUNA AWARD</h4></a>
+      <p></p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFxgXFxgXFRcVGBUXFxcWFhUYFRUYHSggGBolHRUfITEhJSkrLi4uIDEzODMvNzAuLy8BCgoKDg0OGxAQGysfICUuKystLS0tLS0tLS0tLS0tLS0tLSsrLS0tLS0tLS0tLS0tLS0tLS0uLS0tKy0tLS0tLf/AABEIAKYAhgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIEBQYDB//EADYQAAIBAgQDBQUIAgMAAAAAAAABAgMRBBIhMQVBYRNRcYGRIjJSwdEGFSNCU5KhsRRDYvDx/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAECAwQF/8QAJBEAAgICAgEEAwEAAAAAAAAAAAECEQMhEjEiBEFRgUJhkTL/2gAMAwEAAhEDEQA/AO0bJxIImhGgUhDYAMGhZSQkAEWKwVppJt7LU53GcYnJ5YezHpu/MhOagtk4Qc3SOiAwKPE5RqZbPJ1d7dbm+hY8in0GTG4djQxAWEAYmhiGAmgGIAJoQIBMLJIYDSGIiwQ2JAA0JhcjcQFHjl+xnbp/ZzuGrWWbfS/R2OsxNFTg4vZqxwVFyhUnBu8Vez8zP6mFqzR6eW6OuUIP2mlaS9G0euBx1NqMM3tJWenNdTO+8oKg6VtXs77MyXSk5ZYvSLsrfyyjHk4qy3JFydM7QDmaePq0XZyzpOzW/ozocHiY1IqUdv68TXDKpGaeNx7Pa4gAtKwEAIYycQBCIsR6DAYxEWRJMjYACwhgAEbmRxPg6m1KCUZc+SfXxNgrYnEKIpJNbJxbT0YuN4SqdPPnd4tN6ablLhlSTnJN3u2789TTxWLc4yi0rNWMLhlZQrJN7SsZMsI14o0QnP8AI0pUXqmut/A98HGVCUW/cnv3dGXcTZy05p8ujPPB0+0TpXvmWaN+Ul9SpVFljbkv0a1xM8MFNuNnvH2X5Fg6EXasxtU6EhgiRIiNACAQE7DFcLgIbINDGAEREiLAYmY/EjXZQx+HurkZK0Si6ZkM5vFS1b5p/wAp6HSzhY5/EUm1Uaje0tX4vZmcvfR1/D66mqd98vrc96+HVJQlHfe/hpYwMJjMlKGVLPZuWnupaK7e5rYTidPsZwqyk6jd04x0vzsirh3y9ySn1xLirQb7RS9pr249/VdS0mc1Qmk9tZXWr0V+bNrhVXNCzavF2dv4ZZgybpkc2Otl0aFlGjWZiSYEQACYIaQ7AIQDsFhgIVh2CwAebQpRuekkRSEMpVMCnrc5OEIupKMb5bt3v6HS/aPHdlSsvelovmcrhpWsuczL6h6pdmjD8sXHsVecIQTUIRUei77vq9S1wyuoyUt9b6q/oiwsNHK49+7MzBtxbV1o7FU01FFkabdG/wAZvKV8uW8U7K3yHw2PZqE+Unll8gnBKnGT595P3qdOEdZSlmt3JbvoRTfKyb/xRuoaQ0hM6VHPsLAKwAB65R2AaQhEWO4MBjBErCQ2ACaIS0JmVx7G5IWW8k/QjKSirY4q3SOVxuJliKkp8o3UF3It4Dhrpwzz96W3/GPLzZl4St2at33v06HTYiT7ON1rlV78tDJjblJtmqWkkjOk7XZW4ThHVmuru/DkS4hO0GbP2XVOlS7WoptyvltF5f3fIhlt6JQ1sfEqSlKEF7sT34PFPNPm3ZdIoq1cdTcZuMlmadr6HpwWpaMV0DA7nYZtQpG0hDTEdAxBcAsIQj0JpkbDGACJiYDFcTGREA2zn/tJNqUFlumn5WN6Rz/Fq+atGn4L13Ks78GW4V5npwjh9O0amT2tW29tfdXj1JcUqcjSryUVZaGFXblIEuEaBeUrMfiLu1H18zuKNSEsJClD8qfmzi8RhM1Zw5u1vFlvhmPnRnknffX6roYskmpN/RqUU0v6evE8HGNSLte8U10fNBhZ2Zs1lSnZTaakrp9z5NGRSw7zuPwuxPDLVEMnyzew07o9jxw0LI9bnQRjY0wEmAUI9WxqRGwxAFx2IpEgGMTYIGAEJM5/BSVTEZvhvJ/0jW4nWyU5PpZeehkcE9yc+929P/SnIrkl9lkHSbLvEa558PoLco4mTcrGnw+DS1H3IOomRvi2+Sml6WJcVhC7W7vZNbpt8ifDaV6k5Pa7ZRq1M9TbRa/JGCT5ZHXybIrjH6POhOUfw29N0zZwM/bu07W1fd3NmZUpSdnFaplrB4mU6maeqtlfK3kTcXCXJCclNUzpAK2Hq6JPbZP4rFi50ISUlaMMlT2MBXAkIsIDyzkswhEyLFceYBhci2DkQbARg/arEWjGPm/LYs8Po5KEIve134vUw+IS/wAjFqCfs5lHyjrI6XFzS0RCvKyd6opUcK3K5oYifZ05PuRDCd4cTl+G1zlol33C1FNj7aRl4fDSjSst563unoZ9CL57t6m3i8M6VNRau7bW28+Zj09Ejn4U+WzZNqtF3CV1Hct/Z2KnOo7Wum+njrsYbcZPJKWVf9/g36NWCXZ0dItLPLnK3JdyL3JtqKKuKSsnSlmTS5O6fc0XbEYWSsloSczRhx8EUZJcmCQwTAuK6M18Wj8LH97x+FmJfUi2yAG598L4WP75j8L9TBcu8r1MS9kQlPiTjFyN6px6/uR82ytXxVaSb1Xg7bnPU8XldpLzLf8AnUnprfvv8jNLJL3NCxot8ApRoylOSbk9FbkufmalbGpvZmPTqUvjaLGSi1dV7Pua+ZJZ/aiLwtHsuKzcskLRV7Zmrv6GtgaeHh7cqvaTfOT28Ec3HCwvpWT8D2WCh+aqUzlyJxjWjouO4q+XJJSv3NaHPKtHM87Sd3c83Qop6Vl10+ZKLw63k34R+Yoz8roscKjRbl2LWk43POhUyvTUrKvQW0ZPySPOpjI/lp+svoX85P8AEq4r5OpwtTMiwkcR2897peBYpYidvefqaIydbKJKjsEgOVjjai/O/UCZGgbC4AMiRlFO19u498PSha+UAObm3NnVwJLGiVSjT5U4+ZFUIfpw9AAi0WN6PVUYfpw9D0jTht2UPQALEUSbLNGNL9KK8kXqeFpv/XH9qACxKimTPSOFpfpx/ai1Hh9Ky/Dh+1CA0wMuRntDh9Jf6qd7/Cj0VClFpdlD9q+gAWWVIlLC0HdOjDu91Hz/AB+GyVqkFspaeYgB9Eo9ni4jACBM/9k=" width="300" height="180"">
+      <h4>DHAYAN CHANDRA AWARD</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://ankpublic.s3.amazonaws.com/www.indiavsdisinformation.com/2020/202008/20200821-wsfl20200821171as.jpg" width="300" height="180"">
+      <h4>RAJIV GANDHI KHEL RATNA</h4>
+      <p></p>
+    </div>
+  </div>
+</div class="row">
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
+<!-- ignore-->
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+  </div>
+</div>
+<!-- ignore-->
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
